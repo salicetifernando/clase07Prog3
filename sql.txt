@@ -1,0 +1,47 @@
+//INSERT INTO `vehiculo`(``)
+//VALUES("AAA111","01/10/2016 15:00")
+//INSERTAR
+
+//SELECT * 
+//FROM vehiculo
+//BUSQUEDA
+
+//DELETE
+//FROM VEHICULO
+//WHERE ID = "1"
+//BORRAR
+
+//UPDATE
+//VEHICULO
+//SET PATENTE = "natalia"
+//WHERE id == "3"
+//ACTUALIZA
+
+//BUSQUEDA
+//SELECT E.nombre, L.descripcion as localidad
+// FROM `empleado` as E, `localidad` as L 
+//WHERE L.id = E.idLocalidad
+
+//AGREGAR COLUMNAS A UNA TABLA
+//ALTER TABLE `vehiculo` ADD `idEmplado` INT NOT NULL ;
+
+//NOSE
+//SELECT V.patente,V.ingreso,V.salida,E.nombre as Nombre de Empleado,L.descripcion as Localidad
+//FROM `vehiculo` as V, `empleado` as E, `localidad` as L
+//WHERE V.idEmpleado = E.id AND E.idLocalidad = L.id
+
+//CONSULTA
+//SELECT V.patente, E.nombre as Empleado, S.nombre as Socio, L.descripcion as Localidad FROM `vehiculo` as V, `empleado` as E, `socio` as S, //`localidad` as L WHERE V.idEmplado = E.id AND V.idSocio = S.id AND E.idLocalidad = L.id AND S.idLocalidad = L.id AND L.descripcion = "lanus"
+
+//CONSULTA
+/*
+
+SELECT V.patente, E.nombre as Empleado, S.nombre as Socio, LE.descripcion as Localidad_Empleado, LS.descripcion as Localidad_Socio 
+FROM `vehiculo` as V, `empleado` as E, `socio` as S, `localidad` as LE, `localidad` as LS 
+WHERE V.idEmplado = E.id 
+AND V.idSocio = S.id 
+AND E.idLocalidad = LE.id
+AND S.idLocalidad = LS.id 
+AND LE.descripcion = "lanus"
+AND LS.descripcion = "avellaneda"
+*/
